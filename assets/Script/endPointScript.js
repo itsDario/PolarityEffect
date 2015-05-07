@@ -11,7 +11,7 @@ function Update () {
 function redFind(){
 	while(true){
 		yield WaitForSeconds(1);
-		if(GameObject.Find("RedCollectable")){
+		if(GameObject.FindWithTag("RedCollectable")){
 			this.gameObject.tag = "forceBox";
 		}else{
 			this.gameObject.tag = "end";
